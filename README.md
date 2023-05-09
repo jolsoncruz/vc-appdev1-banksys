@@ -75,80 +75,72 @@ To deliver a fully user-friendly experience and ensure easy onboarding, an easy-
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Create the software as a console app and test all functionalities
 </li>
-</ol>
    </td>
    <td>
+      May 29, 2023
    </td>
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Implement object oriented programming and design patterns to create an efficient skeleton app
 </li>
-</ol>
    </td>
    <td>
+      June 3, 2023
    </td>
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Connect MongoDB database to the application
 </li>
-</ol>
    </td>
    <td>
+      June 5, 2023
    </td>
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Test CRUD (Create, Read, Update, Delete) functionalities and make sure all functionalities of the application are working accordingly
 </li>
-</ol>
    </td>
    <td>
+      June 8, 2023
    </td>
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Create GUI (Graphical User Interface) for the application for ease of access and use for end users
 </li>
-</ol>
    </td>
    <td>
+      June 19, 2023
    </td>
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Implement printer functionality to allow users to print reports
 </li>
-</ol>
    </td>
    <td>
+      June 23, 2023
    </td>
   </tr>
   <tr>
    <td>
-<ol>
 
 <li>Project Presentation
 </li>
-</ol>
    </td>
    <td>
+      July 3, 2023
    </td>
   </tr>
 </table>
-
