@@ -47,13 +47,7 @@ Banking Institutions will play an integral role in the implementation of CashFlo
 
 CashFlow360 is an open-source banking system provided by Aryan Arora and Jolson Cruz. Aryan and Jolson are postgraduate students from Vanier College taking up an Attestation of Collegial Studies diploma in Software Development: Secure Desktop, Mobile and Web Applications Attestation. is a full-time technical training program designed for an adult clientele who already have an educational or working background, but who wish to upgrade their skills at a higher educational level. They are developed by colleges in Quebec in collaboration with labor market partners to ensure they meet the needs of the workforce. Attestations are recognized by the Quebec Ministry of Education, and are highly regarded by employers and various licensing and certification boards. Courses focus on core subjects and relevant, real-world training.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.jpg "image_tooltip")
-
+![Aryan Arora and Jolson Cruz during their Graduation Photoshoot](images/VendorPhoto.jpg "Aryan Arora and Jolson Cruz during their Graduation Photoshoot")
 
 Moreover, Aryan and Jolson are long-time friends (🤝) and colleagues (💼) from the Philippines who both took-up Bachelors of Science in Computer Science with Specialization in Network Engineering at De La Salle University in Manila, Philippines. Both network engineers graduated last 2022 with an undergraduate thesis related to novel-based security protocols in Wireless Sensor Networks.
 
@@ -65,15 +59,12 @@ To deliver a fully user-friendly experience and ensure easy onboarding, an easy-
 
 **Project Properties:**
 
-
-
 * C# : Programming language that was developed by Microsoft in the early 2000s. It is an object-oriented language that is similar in syntax and structure to Java and C++. C# is primarily used to develop Windows desktop applications, video games, and enterprise software.
 * .NET Framework : ​​Software framework that was developed by Microsoft for building and running applications on the Windows operating system.
 * MongoDB (Database) : Document-oriented NoSQL (not only SQL) database that was developed by MongoDB Inc. It is a free and open-source database that stores data in flexible, JSON-like documents, which makes it a good fit for many modern applications that need to store and retrieve large amounts of unstructured data.
 * System.Drawing : Library that provides a range of graphical functions and classes for working with images, graphics, and printing in C#. It includes a number of namespaces, including System.Drawing.Imaging, System.Drawing.Printing, and System.Drawing.Drawing2D.
 
 **Plan Details:**
-
 
 <table>
   <tr>
