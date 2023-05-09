@@ -35,7 +35,7 @@
     * Networking and Data Storage: The banking system will provide implementing banks with the ability to securely store data in a remote database.
     * Connectivity: The banking system will provide implementing banks with the ability to connect to a local printer to print reports.
 
-**Project Users**: 
+**Project Users:** 
 
 CashFlow360 will benefit both bankers and their customers respectively for a faster more efficient management system that will streamline the banking operations with a simple and secure method of managing accounts, providing customers with support and details, and closing transaction requests. The software will also allow clerks and other bank employees to easily access customer accounts and provide them with detailed information such as bank balance, statements and even make use of printer connectivity to print and provide the information to its customers. 
 
@@ -43,7 +43,7 @@ CashFlow360 will benefit both bankers and their customers respectively for a fas
 
 Banking Institutions will play an integral role in the implementation of CashFlow360. As a Modern Day Banking System, banking institutions will have to review and approve the proposed system to have its clients (and staff) benefit from the streamlined features it provides. Without the review and approval of banking institutions, CashFlow360 would not be able to identify the individual and unique features that implementing banking institutions require. For instance, not all banks provide the same banking products to its clients; thus, not all banking institutions will require the same set of features from our system. A real-life example of such a scenario is HSBC’s ability to instantly transfer funds from any HSBC account in its servicing countries without the need of wire or telegraphic transfer. Furthermore, CIBC provides their clients with the ability to instantly check their Equifax credit score without the need of paying for a credit check nor risking a hard inquiry.
 
-**Project Vendors: **
+**Project Vendors:**
 
 CashFlow360 is an open-source banking system provided by Aryan Arora and Jolson Cruz. Aryan and Jolson are postgraduate students from Vanier College taking up an Attestation of Collegial Studies diploma in Software Development: Secure Desktop, Mobile and Web Applications Attestation. is a full-time technical training program designed for an adult clientele who already have an educational or working background, but who wish to upgrade their skills at a higher educational level. They are developed by colleges in Quebec in collaboration with labor market partners to ensure they meet the needs of the workforce. Attestations are recognized by the Quebec Ministry of Education, and are highly regarded by employers and various licensing and certification boards. Courses focus on core subjects and relevant, real-world training.
 
@@ -63,7 +63,7 @@ CashFlow360’s is a tool that will be heavily used by both banking Institutions
 
 To deliver a fully user-friendly experience and ensure easy onboarding, an easy-to-follow user documentation is accompanied in this project. Interested banking institutions will simply have to follow the deployment manual provided in the documentation and supply the user guide to its clients _(if necessary)_. Moreover, banking institutions have the ability to customize the banking system to address their specific needs. For instance, banking institutions can white-label CashFlow360 by incorporating the bank’s official colors, logo, and branding to the system.
 
-**Project Properties: **
+**Project Properties:**
 
 
 
