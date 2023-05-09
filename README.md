@@ -1,7 +1,7 @@
 **Aryan Arora (2219549)**
 **Jolson Eric Cruz (2219359)**
 
-**Project Title: **CashFlow360 _(Modern Day Banking System)_
+**Project Title: ** CashFlow360 _(Modern Day Banking System)_
 
 **Project Scope:** 
 
