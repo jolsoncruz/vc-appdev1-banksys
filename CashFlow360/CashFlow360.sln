@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33403.129
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow360", "CashFlow360\CashFlow360.csproj", "{8D1C0D11-8242-4DF8-81FD-6FE0AC53B239}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D1C0D11-8242-4DF8-81FD-6FE0AC53B239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1C0D11-8242-4DF8-81FD-6FE0AC53B239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1C0D11-8242-4DF8-81FD-6FE0AC53B239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1C0D11-8242-4DF8-81FD-6FE0AC53B239}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88E19B8B-AF07-4C74-B23A-B7E768A98A3E}
+	EndGlobalSection
+EndGlobal
