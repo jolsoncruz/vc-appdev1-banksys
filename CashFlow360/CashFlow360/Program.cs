@@ -10,6 +10,7 @@ namespace CashFlow360
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World!");
         }
     }
 }
