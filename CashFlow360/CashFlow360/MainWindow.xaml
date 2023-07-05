@@ -5,58 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashFlow360"
         mc:Ignorable="d"
-        Title="MainWindow" Height="538" Width="800">
+        Title="Admin View" Height="538" Width="800">
     <Grid>
         <Label x:Name="mainLabel" Content="💰CashFlow360:" Margin="21,19,0,0" VerticalAlignment="Top" Height="20" Width="169" FontSize="18" FontWeight="Bold" FontFamily="Objectivity" HorizontalAlignment="Left" Padding="0,0,0,0" VerticalContentAlignment="Center"/>
         <Label x:Name="mainLabel_Copy" Content="Modern Day Banking System" Margin="190,19,0,0" VerticalAlignment="Top" Height="20" Width="273" FontSize="18" FontFamily="Objectivity" HorizontalAlignment="Left" Padding="0,0,0,0" VerticalContentAlignment="Center"/>
         <TabControl Margin="20,56,20,24">
-            <TabItem Header="Client Information" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+            <TabItem Header="User Management" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
                 <Grid Background="#B3CDD1">
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Label Content="First Name:" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <Label Content="Middle Name:" HorizontalAlignment="Left" Margin="20,54,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <Label Content="Last Name:" HorizontalAlignment="Left" Margin="21,88,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <Label Content="Birthdate:" HorizontalAlignment="Left" Margin="21,135,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <Label Content="Gender:" HorizontalAlignment="Left" Margin="21,169,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="318,20,21,30">
+                    <ListView x:Name="UM_AccountList" HorizontalAlignment="Left" VerticalAlignment="Top" Height="340" Width="410" ItemsSource="{Binding AccountList}" Grid.ColumnSpan="2" Margin="318,20,21,30" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" SelectionChanged="UM_AccountList_SelectionChanged">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn/>
+                                <GridViewColumn DisplayMemberBinding="{Binding AccountNumber}" Header="Acc No." Width="70"></GridViewColumn>
+                                <GridViewColumn DisplayMemberBinding="{Binding CustomerName}" Header="Name" Width="120"></GridViewColumn>
+                                <GridViewColumn DisplayMemberBinding="{Binding CustomerAddress}" Header="Address" Width="200"></GridViewColumn>
+                                <GridViewColumn DisplayMemberBinding="{Binding CustomerPhone}" Header="Phone" Width="100"></GridViewColumn>
+                                <GridViewColumn DisplayMemberBinding="{Binding CustomerSIN}" Header="SIN" Width="100"></GridViewColumn>
+                                <GridViewColumn DisplayMemberBinding="{Binding AccountBalance}" Header="Balance" Width="70"></GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>
-                    <Label Content="Address:" HorizontalAlignment="Left" Margin="21,250,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <Label Content="Phone Number:" HorizontalAlignment="Left" Margin="21,282,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <Label Content="Country:" HorizontalAlignment="Left" Margin="21,217,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
-                    <TextBox HorizontalAlignment="Left" Margin="128,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
-                    <Button Content="Add" HorizontalAlignment="Left" Margin="29,333,0,0" VerticalAlignment="Top" Width="83" Height="25"/>
-                    <Button Content="Update" HorizontalAlignment="Left" Margin="119,333,0,0" VerticalAlignment="Top" Width="83" Height="25"/>
-                    <Button Content="Delete" HorizontalAlignment="Left" Margin="209,333,0,0" VerticalAlignment="Top" Width="82" Height="25" Background="#EF767A"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Money Management">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="7*"/>
-                        <ColumnDefinition Width="787*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-            </TabItem>
-            <TabItem Header="Account Log">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="7*"/>
-                        <ColumnDefinition Width="787*"/>
-                    </Grid.ColumnDefinitions>
+
+                    <Label Content="Account No:" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+                    <Label Content="Name:" HorizontalAlignment="Left" Margin="20,64,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+                    <Label Content="Address:" HorizontalAlignment="Left" Margin="21,95,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+                    <Label Content="Phone Number:" HorizontalAlignment="Left" Margin="21,127,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+                    <Label Content="SIN:" HorizontalAlignment="Left" Margin="21,169,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+                    <Label Content="Balance:" HorizontalAlignment="Left" Margin="21,206,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+                    <Label Content="Password:" HorizontalAlignment="Left" Margin="21,243,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+
+                    <TextBox x:Name="AccountNumber_TextBox" HorizontalAlignment="Left" Margin="128,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+                    <TextBox x:Name="Name_TextBox" HorizontalAlignment="Left" Margin="128,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+                    <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Margin="128,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+                    <TextBox x:Name="PhoneNumber_TextBox" HorizontalAlignment="Left" Margin="128,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+                    <TextBox x:Name="SIN_TextBox" HorizontalAlignment="Left" Margin="128,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+                    <TextBox x:Name="Balance_TextBox" HorizontalAlignment="Left" Margin="128,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+                    <TextBox x:Name="Password_TextBox" HorizontalAlignment="Left" Margin="128,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+
+                    <Button x:Name="Add_Button" Content="Add" HorizontalAlignment="Left" Margin="29,333,0,0" VerticalAlignment="Top" Width="83" Height="25" Click="Add_Button_Click"/>
+                    <Button x:Name="Manage_Button" Content="Manage" HorizontalAlignment="Left" Margin="119,333,0,0" VerticalAlignment="Top" Width="83" Height="25" Click="Manage_Button_Click"/>
+                    <Button x:Name="Delete_Button" Content="Delete" HorizontalAlignment="Left" Margin="209,333,0,0" VerticalAlignment="Top" Width="82" Height="25" Background="#EF767A" Click="Delete_Button_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>

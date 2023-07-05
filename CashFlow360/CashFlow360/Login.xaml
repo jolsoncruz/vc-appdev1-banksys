@@ -1,0 +1,18 @@
+﻿<Window x:Class="CashFlow360.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CashFlow360"
+        mc:Ignorable="d"
+        Title="Login" Height="538" Width="800">
+    <Grid>
+        <Label x:Name="mainLabel" Content="💰CashFlow360:" Margin="21,19,0,0" VerticalAlignment="Top" Height="20" Width="169" FontSize="18" FontWeight="Bold" FontFamily="Objectivity" HorizontalAlignment="Left" Padding="0,0,0,0" VerticalContentAlignment="Center"/>
+        <Label x:Name="mainLabel_Copy" Content="Modern Day Banking System" Margin="190,19,0,0" VerticalAlignment="Top" Height="20" Width="273" FontSize="18" FontFamily="Objectivity" HorizontalAlignment="Left" Padding="0,0,0,0" VerticalContentAlignment="Center"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="31,220,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"></Label>
+        <TextBox x:Name="Username_TextBox" HorizontalAlignment="Left" Margin="138,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="31,261,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Objectivity"/>
+        <TextBox x:Name="Password_TextBox" HorizontalAlignment="Left" Margin="138,261,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" Height="22"/>
+        <Button x:Name="LogIn_Button" Content="Log-in" HorizontalAlignment="Left" Margin="209,333,0,0" VerticalAlignment="Top" Width="82" Height="25" Background="#76ef80" Click="LogIn_Button_Click"/>
+    </Grid>
+</Window>
