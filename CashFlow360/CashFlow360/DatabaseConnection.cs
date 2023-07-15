@@ -19,10 +19,11 @@ namespace CashFlow360
             var client = new MongoClient(settings);
             var collection = client.GetDatabase("CashFlow360").GetCollection<BsonDocument>("accounts");
             var filter = Builders<BsonDocument>.Filter.Eq("account", a.AccountNumber);
+            var document = collection.Find(filter).FirstOrDefault();
 
             try
             {
-                if(filter == null)
+                if(document == null)
                 {
                     collection.InsertOne(new BsonDocument
                     {
